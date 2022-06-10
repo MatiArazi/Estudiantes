@@ -27,6 +27,44 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "bimestre",
+						"type": "uint8"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "materia",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "nota",
+						"type": "uint8"
+					}
+				],
+				"name": "nueva_nota",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "nuevo_docente_",
+						"type": "address"
+					}
+				],
+				"name": "agregar_docente",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -56,8 +94,13 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_materia",
+						"name": "materia_",
 						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "bimestre_",
+						"type": "uint8"
 					}
 				],
 				"name": "aprobo",
@@ -101,8 +144,13 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_materia",
+						"name": "materia_",
 						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "bimestre_",
+						"type": "uint8"
 					}
 				],
 				"name": "nota_materia",
@@ -117,7 +165,13 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "bimestre_",
+						"type": "uint8"
+					}
+				],
 				"name": "promedio",
 				"outputs": [
 					{
@@ -140,6 +194,11 @@
 						"internalType": "string",
 						"name": "materia_",
 						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "bimestre_",
+						"type": "uint8"
 					}
 				],
 				"name": "set_nota_materia",
@@ -161,7 +220,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"estudiante.sol": "Estudiante"
+			"estudianteAlt.sol": "Estudiante"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -175,12 +234,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"estudiante.sol": {
-			"keccak256": "0xeaca2e4cc3d39bfe559d859bcb81da98ac4f99466b51014692e3cd296bfe03ee",
+		"estudianteAlt.sol": {
+			"keccak256": "0x6dfcdb592bdfa97ffae091b792f522fbe00be262af3aa58a8f5cb968166fdf3a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f9e6f197215f9d529708d96f24f0334173f0a29356e35a291dddb4df9bb13873",
-				"dweb:/ipfs/QmW9imVzVQjuq56hYe8XoY6R8EMbFfqszvdTMeEZz1CJhG"
+				"bzz-raw://19c37761ec4d7eb0f04e131a273ab326bb19fd53b9504aaf05665b652a1d2779",
+				"dweb:/ipfs/Qmbq1zXZFrYzLJ1kCwibMcoabsDb5nLt3FAQVeNuGYxiTf"
 			]
 		}
 	},
